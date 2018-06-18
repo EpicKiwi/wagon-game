@@ -62,13 +62,17 @@ Pour :
 
 On a :
 
-a = cosh(vt-1 . vt)  
-a/(V/dt) = 2pi/P  
-((v/dt)\*2pi)/a = P  
-((V/dt)\*2pi)/a = 2piR  
-(V/dt)/a = R  
-a\*(V/dt) = R  
+```
+a = cosh(vt-1 . vt)
+a/(V/dt) = 2pi/P
+((v/dt)*2pi)/a = P
+((V/dt)*2pi)/a = 2piR
+(V/dt)/a = R
+a*(V/dt) = R
+```
 
 On a donc la force centrifuge : 
 
+```
 F = (m\*v‘)/R
+```
