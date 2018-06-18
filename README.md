@@ -45,3 +45,30 @@ Veuillez respecter quelques regles pour que le développement en équipe se pass
 * Ne sauvegardez pas une map du jeu si vous n'y avez pas fait de modifications significatives
 * **Discutez** sur le discord privé pour éviter de développer des fonctionnalités déja en cours
 * Donnez un nom de commit **explicite** sur ce que vous venez de faire
+
+## Calculs
+
+### Force centrifuge du wagon
+
+Pour :
+
+* **Vt-1** La tengente au trajet au tick `t-1`
+* **Vt** La tengente au trajet au tick `t`
+* **V** La vitesse
+* **dt** Le temps entre `t-1` et `t`
+* **R** Le rayon du cercle que parcours le vehicule actuellemnt
+* **m** La masse du vehicule
+* **a** L'angle parcouru par le vehicule
+
+On a :
+
+a = cosh(vt-1 . vt)  
+a/(V/dt) = 2pi/P  
+((v/dt)\*2pi)/a = P  
+((V/dt)\*2pi)/a = 2piR  
+(V/dt)/a = R  
+a\*(V/dt) = R  
+
+On a donc la force centrifuge : 
+
+F = (m\*v‘)/R
